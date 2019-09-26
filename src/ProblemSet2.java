@@ -28,23 +28,23 @@ public class ProblemSet2 {
          * name, grade, age, and hometown.
          */
 
-         System.out.print("\nEnter your first name: ");
-         String firstName = in.nextLine();
-
-         System.out.print("Enter your last name: ");
-         String lastName = in.nextLine();
-
-         System.out.print("Enter your grade: ");
-         int grade = in.nextInt();
-
-         System.out.print("Enter your age: ");
-         int age = in.nextInt();
-         in.nextLine();
-
-         System.out.print("Enter your hometown: ");
-         String homeTown = in.nextLine();
-
-         System.out.println("\nNAME     : " + firstName + " " + lastName + "\nGRADE    : " + grade + "\nAGE      : " + age + "\nHOMETOWN : " + homeTown);
+         // System.out.print("\nEnter your first name: ");
+         // String firstName = in.nextLine();
+         //
+         // System.out.print("Enter your last name: ");
+         // String lastName = in.nextLine();
+         //
+         // System.out.print("Enter your grade: ");
+         // int grade = in.nextInt();
+         //
+         // System.out.print("Enter your age: ");
+         // int age = in.nextInt();
+         // in.nextLine();
+         //
+         // System.out.print("Enter your hometown: ");
+         // String homeTown = in.nextLine();
+         //
+         // System.out.println("\nNAME     : " + firstName + " " + lastName + "\nGRADE    : " + grade + "\nAGE      : " + age + "\nHOMETOWN : " + homeTown);
 
 
         /*
@@ -97,6 +97,23 @@ public class ProblemSet2 {
          * Given a length and width, print the area, perimeter, and diagonal of the
          * corresponding rectangle.
          */
+
+         System.out.print("\nEnter your length: ");
+         double length = in.nextDouble();
+
+         System.out.print("Enter your width: ");
+         double width = in.nextDouble();
+         in.nextLine();
+
+         double area = length * width;
+         double perimeter = (length * 2) + (width * 2);
+         double lengthSquared = length * length;
+         double widthSquared = width * width;
+         double diagonal = java.lang.Math.sqrt(lengthSquared + widthSquared);
+
+         System.out.println("\nAREA      : " + area + "\nPERIMETER : " + perimeter + "\nDIAGONAL  : " + diagonal);
+
+
 
 
 
