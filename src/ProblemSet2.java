@@ -98,6 +98,7 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
 
+<<<<<<< HEAD
          // System.out.print("\nEnter a length: ");
          // double length = in.nextDouble();
          //
@@ -114,6 +115,26 @@ public class ProblemSet2 {
          // System.out.printf("\nAREA      : %,.2f", area);
          // System.out.printf("\nPERIMETER : %,.2f", perimeter);
          // System.out.printf("\nDIAGONAL  : %,.2f\n", diagonal);
+=======
+         System.out.print("\nEnter your length: ");
+         double length = in.nextDouble();
+
+         System.out.print("Enter your width: ");
+         double width = in.nextDouble();
+         in.nextLine();
+
+         double area = length * width;
+         double perimeter = (length * 2) + (width * 2);
+         double lengthSquared = length * length;
+         double widthSquared = width * width;
+         double diagonal = java.lang.Math.sqrt(lengthSquared + widthSquared);
+
+         System.out.println("\nAREA      : " + area + "\nPERIMETER : " + perimeter + "\nDIAGONAL  : " + diagonal);
+
+
+
+
+>>>>>>> 81648bf93d2327781878fea853da7c97d68cd8ae
 
         /*
          * Exercise 8.
@@ -121,6 +142,7 @@ public class ProblemSet2 {
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
 
+<<<<<<< HEAD
          System.out.print("\nEnter a side length: ");
          double sideLength = in.nextDouble();
          in.nextLine();
@@ -133,6 +155,8 @@ public class ProblemSet2 {
 
          System.out.printf("\nAREA      : %,.2f", hexArea);
          System.out.printf("\nPERIMETER : %,.2f\n", hexPerimeter);
+=======
+>>>>>>> 81648bf93d2327781878fea853da7c97d68cd8ae
 
 
         /*
