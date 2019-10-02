@@ -89,6 +89,18 @@ public class ProblemSet2 {
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
 
+         // System.out.print("\nEnter a diameter: ");
+         // double circleDiameter = in.nextDouble();
+         //
+         // double circleRadius = circleDiameter / 2;
+         // double radiusSquared = circleRadius * circleRadius;
+         // double circleArea = Math.PI * radiusSquared;
+         //
+         // double circleCircumfrence = 2 * Math.PI * circleRadius;
+         //
+         // System.out.printf("\nAREA          : %.2f", circleArea);
+         // System.out.printf("\nCIRCUMFERENCE : %.2f\n", circleCircumfrence);
+
 
 
         /*
@@ -98,7 +110,7 @@ public class ProblemSet2 {
          * corresponding rectangle.
          */
 
-<<<<<<< HEAD
+
          // System.out.print("\nEnter a length: ");
          // double length = in.nextDouble();
          //
@@ -115,26 +127,6 @@ public class ProblemSet2 {
          // System.out.printf("\nAREA      : %,.2f", area);
          // System.out.printf("\nPERIMETER : %,.2f", perimeter);
          // System.out.printf("\nDIAGONAL  : %,.2f\n", diagonal);
-=======
-         System.out.print("\nEnter your length: ");
-         double length = in.nextDouble();
-
-         System.out.print("Enter your width: ");
-         double width = in.nextDouble();
-         in.nextLine();
-
-         double area = length * width;
-         double perimeter = (length * 2) + (width * 2);
-         double lengthSquared = length * length;
-         double widthSquared = width * width;
-         double diagonal = java.lang.Math.sqrt(lengthSquared + widthSquared);
-
-         System.out.println("\nAREA      : " + area + "\nPERIMETER : " + perimeter + "\nDIAGONAL  : " + diagonal);
-
-
-
-
->>>>>>> 81648bf93d2327781878fea853da7c97d68cd8ae
 
         /*
          * Exercise 8.
@@ -142,21 +134,20 @@ public class ProblemSet2 {
          * Given a side length, print the area and perimeter of the corresponding hexagon.
          */
 
-<<<<<<< HEAD
-         System.out.print("\nEnter a side length: ");
-         double sideLength = in.nextDouble();
-         in.nextLine();
 
-         final double SQUARE_ROOT = Math.sqrt(3);
+         // System.out.print("\nEnter a side length: ");
+         // double sideLength = in.nextDouble();
+         // in.nextLine();
+         //
+         // final double SQUARE_ROOT = Math.sqrt(3);
+         //
+         // double hexPerimeter = sideLength * 6;
+         // double sideSquared = Math.pow(sideLength, 2);
+         // double hexArea = (((3 * SQUARE_ROOT) / 2) * sideSquared);
+         //
+         // System.out.printf("\nAREA      : %,.2f", hexArea);
+         // System.out.printf("\nPERIMETER : %,.2f\n", hexPerimeter);
 
-         double hexPerimeter = sideLength * 6;
-         double sideSquared = Math.pow(sideLength, 2);
-         double hexArea = (((3 * SQUARE_ROOT) / 2) * sideSquared);
-
-         System.out.printf("\nAREA      : %,.2f", hexArea);
-         System.out.printf("\nPERIMETER : %,.2f\n", hexPerimeter);
-=======
->>>>>>> 81648bf93d2327781878fea853da7c97d68cd8ae
 
 
         /*
@@ -165,7 +156,14 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
 
-
+        // System.out.print("\nEnter a String: ");
+        // String inputString = in.next();
+        //
+        // int characterLength = Math.round(inputString.length()/2);
+        // String inputfirstHalf = inputString.substring(0,characterLength);
+        // String inputsecondHalf = inputString.substring(characterLength);
+        //
+        // System.out.println("\n" + inputsecondHalf + inputfirstHalf);
 
         /*
          * Exercise 10.
@@ -173,8 +171,17 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
 
-
-
-        in.close();
+        //  System.out.print("Enter your first name: ");
+        //  String firstName2 = in.next();
+        //
+        //  System.out.print("Enter your middle name: ");
+        //  String middleName2 = in.next();
+        //
+        //  System.out.print("Enter your last name: ");
+        //  String lastName2 = in.next();
+        //
+        //  System.out.println("\n" + firstName2.substring(0,1) + middleName2.substring(0,1) + lastName2.substring(0,1));
+        //
+        // in.close();
     }
 }
