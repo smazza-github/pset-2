@@ -81,7 +81,20 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
 
+         final int KILO_TO_CENTI = 100000;
+         final int METER_TO_CENTI = 100;
 
+         System.out.print("\nEnter a number of centimeters: ");
+         int centimeters = in.nextInt();
+
+         int kilometers = centimeters / KILO_TO_CENTI;
+         centimeters = centimeters % KILO_TO_CENTI;
+         int meters = centimeters / METER_TO_CENTI;
+         centimeters = centimeters % METER_TO_CENTI;
+
+         System.out.println("\nKILOMETERS  : " + kilometers);
+         System.out.println("METERS      : " + meters);
+         System.out.println("CENTIMETERS : " + centimeters);
 
         /*
          * Exercise 6.
