@@ -59,31 +59,31 @@ public class ProblemSet2 {
          final int DIME_CURRENCY = 10;
          final int NICKEL_CURRENCY = 5;
          final int PENNY_CURRENCY = 1;
-
-         System.out.print("\nEnter a dollar amount: ");
-         double inputCurrency = in.nextDouble();
-         int pennyTotal = (int) (inputCurrency * 100);
-
-         int dollarTotal = pennyTotal / DOLLAR_CURRENCY;
-         pennyTotal = pennyTotal % DOLLAR_CURRENCY;
-
-         int quarterTotal = pennyTotal / QUARTER_CURRENCY;
-         pennyTotal = pennyTotal % QUARTER_CURRENCY;
-
-         int dimeTotal = pennyTotal / DIME_CURRENCY;
-         pennyTotal = pennyTotal % DIME_CURRENCY;
-
-         int nickelTotal = pennyTotal / NICKEL_CURRENCY;
-         pennyTotal = pennyTotal % NICKEL_CURRENCY;
-
-         int pennyFinal = pennyTotal / PENNY_CURRENCY;
-         pennyTotal = pennyTotal % PENNY_CURRENCY;
-
-         System.out.println("\nDOLLARS  : " + dollarTotal);
-         System.out.println("QUARTERS : " + quarterTotal);
-         System.out.println("DIMES    : " + dimeTotal);
-         System.out.println("NICKELS  : " + nickelTotal);
-         System.out.println("PENNIES  : " + pennyFinal);
+         //
+         // System.out.print("\nEnter a dollar amount: ");
+         // double inputCurrency = in.nextDouble();
+         // int pennyTotal = (int) (inputCurrency * 100);
+         //
+         // int dollarTotal = pennyTotal / DOLLAR_CURRENCY;
+         // pennyTotal = pennyTotal % DOLLAR_CURRENCY;
+         //
+         // int quarterTotal = pennyTotal / QUARTER_CURRENCY;
+         // pennyTotal = pennyTotal % QUARTER_CURRENCY;
+         //
+         // int dimeTotal = pennyTotal / DIME_CURRENCY;
+         // pennyTotal = pennyTotal % DIME_CURRENCY;
+         //
+         // int nickelTotal = pennyTotal / NICKEL_CURRENCY;
+         // pennyTotal = pennyTotal % NICKEL_CURRENCY;
+         //
+         // int pennyFinal = pennyTotal / PENNY_CURRENCY;
+         // pennyTotal = pennyTotal % PENNY_CURRENCY;
+         //
+         // System.out.println("\nDOLLARS  : " + dollarTotal);
+         // System.out.println("QUARTERS : " + quarterTotal);
+         // System.out.println("DIMES    : " + dimeTotal);
+         // System.out.println("NICKELS  : " + nickelTotal);
+         // System.out.println("PENNIES  : " + pennyFinal);
 
         /*
          * Exercise 3.
@@ -92,11 +92,43 @@ public class ProblemSet2 {
          * bills and coins needed to produce this amount.
          */
 
+         final int TWENTY_CURRENCY = 2000;
+         final int TEN_CURRENCY = 1000;
+         final int FIVE_CURRENCY = 500;
 
+         System.out.print("\nEnter a dollar amount: ");
+         double inputCurrency2 = in.nextDouble();
+         int pennyTotal2 = (int) (inputCurrency2 * 100);
 
+         int twentyTotal = pennyTotal2 / TWENTY_CURRENCY;
+         pennyTotal2 = pennyTotal2 % TWENTY_CURRENCY;
 
+         int tenTotal = pennyTotal2 / TEN_CURRENCY;
+         pennyTotal2 = pennyTotal2 % TEN_CURRENCY;
 
+         int fiveTotal = pennyTotal2 / FIVE_CURRENCY;
+         pennyTotal2 = pennyTotal2 % FIVE_CURRENCY;
 
+         int dollarTotal2 = pennyTotal2 / DOLLAR_CURRENCY;
+         pennyTotal2 = pennyTotal2 % DOLLAR_CURRENCY;
+
+         int quarterTotal2 = pennyTotal2 / QUARTER_CURRENCY;
+         pennyTotal2 = pennyTotal2 % QUARTER_CURRENCY;
+
+         int dimeTotal2 = pennyTotal2 / DIME_CURRENCY;
+         pennyTotal2 = pennyTotal2 % DIME_CURRENCY;
+
+         int nickelTotal2 = pennyTotal2 / NICKEL_CURRENCY;
+         pennyTotal2 = pennyTotal2 % NICKEL_CURRENCY;
+
+         int pennyFinal2 = (int) (pennyTotal2 / PENNY_CURRENCY);
+         pennyTotal2 = pennyTotal2 % PENNY_CURRENCY;
+
+         int totalBills = twentyTotal + tenTotal + fiveTotal + dollarTotal2;
+         int totalCoins = quarterTotal2 + dimeTotal2 + nickelTotal2 + pennyFinal2;
+
+         System.out.println("\nBILLS : " + totalBills);
+         System.out.println("COINS : " + totalCoins);
 
         /*
          * Exercise 4.
