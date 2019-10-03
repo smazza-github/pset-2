@@ -28,23 +28,23 @@ public class ProblemSet2 {
          * name, grade, age, and hometown.
          */
 
-         // System.out.print("\nEnter your first name: ");
-         // String firstName = in.nextLine();
-         //
-         // System.out.print("Enter your last name: ");
-         // String lastName = in.nextLine();
-         //
-         // System.out.print("Enter your grade: ");
-         // int grade = in.nextInt();
-         //
-         // System.out.print("Enter your age: ");
-         // int age = in.nextInt();
-         // in.nextLine();
-         //
-         // System.out.print("Enter your hometown: ");
-         // String homeTown = in.nextLine();
-         //
-         // System.out.println("\nNAME     : " + firstName + " " + lastName + "\nGRADE    : " + grade + "\nAGE      : " + age + "\nHOMETOWN : " + homeTown);
+         System.out.print("\nEnter your first name: ");
+         String firstName = in.nextLine();
+
+         System.out.print("Enter your last name: ");
+         String lastName = in.nextLine();
+
+         System.out.print("Enter your grade: ");
+         int grade = in.nextInt();
+
+         System.out.print("Enter your age: ");
+         int age = in.nextInt();
+         in.nextLine();
+
+         System.out.print("Enter your hometown: ");
+         String homeTown = in.nextLine();
+
+         System.out.println("\nNAME     : " + firstName + " " + lastName + "\nGRADE    : " + grade + "\nAGE      : " + age + "\nHOMETOWN : " + homeTown);
 
 
         /*
@@ -59,31 +59,31 @@ public class ProblemSet2 {
          final int DIME_CURRENCY = 10;
          final int NICKEL_CURRENCY = 5;
          final int PENNY_CURRENCY = 1;
-         //
-         // System.out.print("\nEnter a dollar amount: ");
-         // double inputCurrency = in.nextDouble();
-         // int pennyTotal = (int) (inputCurrency * 100);
-         //
-         // int dollarTotal = pennyTotal / DOLLAR_CURRENCY;
-         // pennyTotal = pennyTotal % DOLLAR_CURRENCY;
-         //
-         // int quarterTotal = pennyTotal / QUARTER_CURRENCY;
-         // pennyTotal = pennyTotal % QUARTER_CURRENCY;
-         //
-         // int dimeTotal = pennyTotal / DIME_CURRENCY;
-         // pennyTotal = pennyTotal % DIME_CURRENCY;
-         //
-         // int nickelTotal = pennyTotal / NICKEL_CURRENCY;
-         // pennyTotal = pennyTotal % NICKEL_CURRENCY;
-         //
-         // int pennyFinal = pennyTotal / PENNY_CURRENCY;
-         // pennyTotal = pennyTotal % PENNY_CURRENCY;
-         //
-         // System.out.println("\nDOLLARS  : " + dollarTotal);
-         // System.out.println("QUARTERS : " + quarterTotal);
-         // System.out.println("DIMES    : " + dimeTotal);
-         // System.out.println("NICKELS  : " + nickelTotal);
-         // System.out.println("PENNIES  : " + pennyFinal);
+
+         System.out.print("\nEnter a dollar amount: ");
+         double inputCurrency = in.nextDouble();
+         int pennyTotal = (int) (inputCurrency * 100);
+
+         int dollarTotal = pennyTotal / DOLLAR_CURRENCY;
+         pennyTotal = pennyTotal % DOLLAR_CURRENCY;
+
+         int quarterTotal = pennyTotal / QUARTER_CURRENCY;
+         pennyTotal = pennyTotal % QUARTER_CURRENCY;
+
+         int dimeTotal = pennyTotal / DIME_CURRENCY;
+         pennyTotal = pennyTotal % DIME_CURRENCY;
+
+         int nickelTotal = pennyTotal / NICKEL_CURRENCY;
+         pennyTotal = pennyTotal % NICKEL_CURRENCY;
+
+         int pennyFinal = pennyTotal / PENNY_CURRENCY;
+         pennyTotal = pennyTotal % PENNY_CURRENCY;
+
+         System.out.println("\nDOLLARS  : " + dollarTotal);
+         System.out.println("QUARTERS : " + quarterTotal);
+         System.out.println("DIMES    : " + dimeTotal);
+         System.out.println("NICKELS  : " + nickelTotal);
+         System.out.println("PENNIES  : " + pennyFinal);
 
         /*
          * Exercise 3.
@@ -128,7 +128,7 @@ public class ProblemSet2 {
          int totalCoins = quarterTotal2 + dimeTotal2 + nickelTotal2 + pennyFinal2;
 
          System.out.println("\nBILLS : " + totalBills);
-         System.out.println("COINS : " + totalCoins);
+         System.out.println("COINS : " + totalCoins + "\n");
 
         /*
          * Exercise 4.
@@ -137,26 +137,26 @@ public class ProblemSet2 {
          * and inches.
          */
 
-         // final int FEET_TO_INCH = 12;
-         // final int YARD_TO_INCH = 36;
-         // final int MILE_TO_INCH = 63360;
-         //
-         // System.out.print("Enter a number of inches: ");
-         // int inch = in.nextInt();
-         //
-         // int mile = inch / MILE_TO_INCH;
-         // inch = inch % MILE_TO_INCH;
-         //
-         // int yard = inch / YARD_TO_INCH;
-         // inch = inch % YARD_TO_INCH;
-         //
-         // int feet = inch / FEET_TO_INCH;
-         // inch = inch % FEET_TO_INCH;
-         //
-         // System.out.println("\nMILES  : " + mile);
-         // System.out.println("\nYARDS  : " + yard);
-         // System.out.println("\nFEET   : " + feet);
-         // System.out.println("\nINCHES : " + inch);
+         final int FEET_TO_INCH = 12;
+         final int YARD_TO_INCH = 36;
+         final int MILE_TO_INCH = 63360;
+
+         System.out.print("Enter a number of inches: ");
+         int inch = in.nextInt();
+
+         int mile = inch / MILE_TO_INCH;
+         inch = inch % MILE_TO_INCH;
+
+         int yard = inch / YARD_TO_INCH;
+         inch = inch % YARD_TO_INCH;
+
+         int feet = inch / FEET_TO_INCH;
+         inch = inch % FEET_TO_INCH;
+
+         System.out.println("\nMILES  : " + mile);
+         System.out.println("YARDS  : " + yard);
+         System.out.println("FEET   : " + feet);
+         System.out.println("INCHES : " + inch);
 
         /*
          * Exercise 5.
@@ -165,20 +165,20 @@ public class ProblemSet2 {
          * meters, and centimeters.
          */
 
-         // final int KILO_TO_CENTI = 100000;
-         // final int METER_TO_CENTI = 100;
-         //
-         // System.out.print("\nEnter a number of centimeters: ");
-         // int centimeters = in.nextInt();
-         //
-         // int kilometers = centimeters / KILO_TO_CENTI;
-         // centimeters = centimeters % KILO_TO_CENTI;
-         // int meters = centimeters / METER_TO_CENTI;
-         // centimeters = centimeters % METER_TO_CENTI;
-         //
-         // System.out.println("\nKILOMETERS  : " + kilometers);
-         // System.out.println("METERS      : " + meters);
-         // System.out.println("CENTIMETERS : " + centimeters);
+         final int KILO_TO_CENTI = 100000;
+         final int METER_TO_CENTI = 100;
+
+         System.out.print("\nEnter a number of centimeters: ");
+         int centimeters = in.nextInt();
+
+         int kilometers = centimeters / KILO_TO_CENTI;
+         centimeters = centimeters % KILO_TO_CENTI;
+         int meters = centimeters / METER_TO_CENTI;
+         centimeters = centimeters % METER_TO_CENTI;
+
+         System.out.println("\nKILOMETERS  : " + kilometers);
+         System.out.println("METERS      : " + meters);
+         System.out.println("CENTIMETERS : " + centimeters);
 
         /*
          * Exercise 6.
@@ -186,17 +186,17 @@ public class ProblemSet2 {
          * Given a diameter, print the area and circumference of the corresponding circle.
          */
 
-         // System.out.print("\nEnter a diameter: ");
-         // double circleDiameter = in.nextDouble();
-         //
-         // double circleRadius = circleDiameter / 2;
-         // double radiusSquared = circleRadius * circleRadius;
-         // double circleArea = Math.PI * radiusSquared;
-         //
-         // double circleCircumfrence = 2 * Math.PI * circleRadius;
-         //
-         // System.out.printf("\nAREA          : %.2f", circleArea);
-         // System.out.printf("\nCIRCUMFERENCE : %.2f\n", circleCircumfrence);
+         System.out.print("\nEnter a diameter: ");
+         double circleDiameter = in.nextDouble();
+
+         double circleRadius = circleDiameter / 2;
+         double radiusSquared = circleRadius * circleRadius;
+         double circleArea = Math.PI * radiusSquared;
+
+         double circleCircumfrence = 2 * Math.PI * circleRadius;
+
+         System.out.printf("\nAREA          : %.2f", circleArea);
+         System.out.printf("\nCIRCUMFERENCE : %.2f\n", circleCircumfrence);
 
 
 
@@ -208,22 +208,22 @@ public class ProblemSet2 {
          */
 
 
-         // System.out.print("\nEnter a length: ");
-         // double length = in.nextDouble();
-         //
-         // System.out.print("Enter a width: ");
-         // double width = in.nextDouble();
-         // in.nextLine();
-         //
-         // double area = length * width;
-         // double perimeter = (length * 2) + (width * 2);
-         // double lengthSquared = length * length;
-         // double widthSquared = width * width;
-         // double diagonal = java.lang.Math.sqrt(lengthSquared + widthSquared);
-         //
-         // System.out.printf("\nAREA      : %,.2f", area);
-         // System.out.printf("\nPERIMETER : %,.2f", perimeter);
-         // System.out.printf("\nDIAGONAL  : %,.2f\n", diagonal);
+         System.out.print("\nEnter a length: ");
+         double length = in.nextDouble();
+
+         System.out.print("Enter a width: ");
+         double width = in.nextDouble();
+         in.nextLine();
+
+         double area = length * width;
+         double perimeter = (length * 2) + (width * 2);
+         double lengthSquared = length * length;
+         double widthSquared = width * width;
+         double diagonal = java.lang.Math.sqrt(lengthSquared + widthSquared);
+
+         System.out.printf("\nAREA      : %,.2f", area);
+         System.out.printf("\nPERIMETER : %,.2f", perimeter);
+         System.out.printf("\nDIAGONAL  : %,.2f\n", diagonal);
 
         /*
          * Exercise 8.
@@ -232,18 +232,18 @@ public class ProblemSet2 {
          */
 
 
-         // System.out.print("\nEnter a side length: ");
-         // double sideLength = in.nextDouble();
-         // in.nextLine();
-         //
-         // final double SQUARE_ROOT = Math.sqrt(3);
-         //
-         // double hexPerimeter = sideLength * 6;
-         // double sideSquared = Math.pow(sideLength, 2);
-         // double hexArea = (((3 * SQUARE_ROOT) / 2) * sideSquared);
-         //
-         // System.out.printf("\nAREA      : %,.2f", hexArea);
-         // System.out.printf("\nPERIMETER : %,.2f\n", hexPerimeter);
+         System.out.print("\nEnter a side length: ");
+         double sideLength = in.nextDouble();
+         in.nextLine();
+
+         final double SQUARE_ROOT = Math.sqrt(3);
+
+         double hexPerimeter = sideLength * 6;
+         double sideSquared = Math.pow(sideLength, 2);
+         double hexArea = (((3 * SQUARE_ROOT) / 2) * sideSquared);
+
+         System.out.printf("\nAREA      : %,.2f", hexArea);
+         System.out.printf("\nPERIMETER : %,.2f\n", hexPerimeter);
 
 
 
@@ -253,14 +253,14 @@ public class ProblemSet2 {
          * Given a string, reverse and print the first and second halves of that string.
          */
 
-        // System.out.print("\nEnter a String: ");
-        // String inputString = in.next();
-        //
-        // int characterLength = Math.round(inputString.length()/2);
-        // String inputfirstHalf = inputString.substring(0,characterLength);
-        // String inputsecondHalf = inputString.substring(characterLength);
-        //
-        // System.out.println("\n" + inputsecondHalf + inputfirstHalf);
+        System.out.print("\nEnter a String: ");
+        String inputString = in.next();
+
+        int characterLength = Math.round(inputString.length()/2);
+        String inputfirstHalf = inputString.substring(0,characterLength);
+        String inputsecondHalf = inputString.substring(characterLength);
+
+        System.out.println("\n" + inputsecondHalf + inputfirstHalf + "\n");
 
         /*
          * Exercise 10.
@@ -268,17 +268,17 @@ public class ProblemSet2 {
          * Given a first, middle, and last name, print the corresponding initials.
          */
 
-        //  System.out.print("Enter your first name: ");
-        //  String firstName2 = in.next();
-        //
-        //  System.out.print("Enter your middle name: ");
-        //  String middleName2 = in.next();
-        //
-        //  System.out.print("Enter your last name: ");
-        //  String lastName2 = in.next();
-        //
-        //  System.out.println("\n" + firstName2.substring(0,1) + middleName2.substring(0,1) + lastName2.substring(0,1));
-        //
-        // in.close();
+         System.out.print("Enter your first name: ");
+         String firstName2 = in.next();
+
+         System.out.print("Enter your middle name: ");
+         String middleName2 = in.next();
+
+         System.out.print("Enter your last name: ");
+         String lastName2 = in.next();
+
+         System.out.println("\n" + firstName2.substring(0,1) + middleName2.substring(0,1) + lastName2.substring(0,1));
+
+        in.close();
     }
 }
