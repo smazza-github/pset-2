@@ -54,7 +54,36 @@ public class ProblemSet2 {
          * bills, quarters, dimes, nickels, and pennies needed to produce this amount.
          */
 
+         final int DOLLAR_CURRENCY = 100;
+         final int QUARTER_CURRENCY = 25;
+         final int DIME_CURRENCY = 10;
+         final int NICKEL_CURRENCY = 5;
+         final int PENNY_CURRENCY = 1;
 
+         System.out.print("\nEnter a dollar amount: ");
+         double inputCurrency = in.nextDouble();
+         int pennyTotal = (int) (inputCurrency * 100);
+
+         int dollarTotal = pennyTotal / DOLLAR_CURRENCY;
+         pennyTotal = pennyTotal % DOLLAR_CURRENCY;
+
+         int quarterTotal = pennyTotal / QUARTER_CURRENCY;
+         pennyTotal = pennyTotal % QUARTER_CURRENCY;
+
+         int dimeTotal = pennyTotal / DIME_CURRENCY;
+         pennyTotal = pennyTotal % DIME_CURRENCY;
+
+         int nickelTotal = pennyTotal / NICKEL_CURRENCY;
+         pennyTotal = pennyTotal % NICKEL_CURRENCY;
+
+         int pennyFinal = pennyTotal / PENNY_CURRENCY;
+         pennyTotal = pennyTotal % PENNY_CURRENCY;
+
+         System.out.println("\nDOLLARS  : " + dollarTotal);
+         System.out.println("QUARTERS : " + quarterTotal);
+         System.out.println("DIMES    : " + dimeTotal);
+         System.out.println("NICKELS  : " + nickelTotal);
+         System.out.println("PENNIES  : " + pennyFinal);
 
         /*
          * Exercise 3.
@@ -65,6 +94,10 @@ public class ProblemSet2 {
 
 
 
+
+
+
+
         /*
          * Exercise 4.
          *
@@ -72,26 +105,26 @@ public class ProblemSet2 {
          * and inches.
          */
 
-         final int FEET_TO_INCH = 12;
-         final int YARD_TO_INCH = 36;
-         final int MILE_TO_INCH = 63360;
-
-         System.out.print("Enter a number of inches: ");
-         int inch = in.nextInt();
-
-         int mile = inch / MILE_TO_INCH;
-         inch = inch % MILE_TO_INCH;
-
-         int yard = inch / YARD_TO_INCH;
-         inch = inch % YARD_TO_INCH;
-
-         int feet = inch / FEET_TO_INCH;
-         inch = inch % FEET_TO_INCH;
-
-         System.out.println("\nMILES  : " + mile);
-         System.out.println("\nYARDS  : " + yard);
-         System.out.println("\nFEET   : " + feet);
-         System.out.println("\nINCHES : " + inch);
+         // final int FEET_TO_INCH = 12;
+         // final int YARD_TO_INCH = 36;
+         // final int MILE_TO_INCH = 63360;
+         //
+         // System.out.print("Enter a number of inches: ");
+         // int inch = in.nextInt();
+         //
+         // int mile = inch / MILE_TO_INCH;
+         // inch = inch % MILE_TO_INCH;
+         //
+         // int yard = inch / YARD_TO_INCH;
+         // inch = inch % YARD_TO_INCH;
+         //
+         // int feet = inch / FEET_TO_INCH;
+         // inch = inch % FEET_TO_INCH;
+         //
+         // System.out.println("\nMILES  : " + mile);
+         // System.out.println("\nYARDS  : " + yard);
+         // System.out.println("\nFEET   : " + feet);
+         // System.out.println("\nINCHES : " + inch);
 
         /*
          * Exercise 5.
